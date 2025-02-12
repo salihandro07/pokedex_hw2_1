@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:page_transition/page_transition.dart';
 import 'package:pokedex_hw2_1/pokemon_detail_screen.dart';
 import 'package:pokedex_hw2_1/pokemon_list.dart';
 import 'app_colors.dart';
@@ -48,24 +49,30 @@ class HomeScreen extends StatelessWidget {
                 buildPokemonCard(image: 'bulba', name: 'Bulbasaur', number: "#001", color: AppColors.bulba, onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(
-                      builder: (context) => PokemonDetailScreen(pokemon: pokemonList[1]), // Charmander
+                    PageTransition(
+                      type: PageTransitionType.rightToLeft,
+                      child: PokemonDetailScreen(pokemon: pokemonList[0]),
                     ),
-                  );                }),
+                  );
+                }),
                 buildPokemonCard(image: 'charmander', name: 'Charmander', number: "#004", color: AppColors.charmander, onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(
-                      builder: (context) => PokemonDetailScreen(pokemon: pokemonList[0]), // Charmander
+                    PageTransition(
+                      type: PageTransitionType.rightToLeft,
+                      child: PokemonDetailScreen(pokemon: pokemonList[1]),
                     ),
-                  );                }),
+                  );
+                }),
                 buildPokemonCard(image: 'squirtle', name: 'Squirtle', number: "#007", color: AppColors.squirtle, onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(
-                      builder: (context) => PokemonDetailScreen(pokemon: pokemonList[2]), // Charmander
+                    PageTransition(
+                      type: PageTransitionType.rightToLeft,
+                      child: PokemonDetailScreen(pokemon: pokemonList[2]),
                     ),
-                  );                }),
+                  );
+                }),
               ]),
               Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -73,24 +80,29 @@ class HomeScreen extends StatelessWidget {
                 buildPokemonCard(image: 'butterfree', name: 'Butterfree', number: "#012", color: AppColors.butterfree, onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(
-                      builder: (context) => PokemonDetailScreen(pokemon: pokemonList[3]), // Charmander
+                    PageTransition(
+                      type: PageTransitionType.rightToLeft,
+                      child: PokemonDetailScreen(pokemon: pokemonList[3]),
                     ),
-                  );                }),
+                  );
+                }),
                 buildPokemonCard(image: 'pikachu', name: 'Pikachu', number: "#025", color: AppColors.pikachu, onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(
-                      builder: (context) => PokemonDetailScreen(pokemon: pokemonList[4]), // Charmander
+                    PageTransition(
+                      type: PageTransitionType.rightToLeft,
+                      child: PokemonDetailScreen(pokemon: pokemonList[4]),
                     ),
-                  );                }),
+                  );
+                }),
                 buildPokemonCard(image: 'gastly', name: 'Goastly', number: "#092", color: AppColors.goastly, onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(
-                      builder: (context) => PokemonDetailScreen(pokemon: pokemonList[5]), // Charmander
+                    PageTransition(
+                      type: PageTransitionType.rightToLeft,
+                      child: PokemonDetailScreen(pokemon: pokemonList[5]),
                     ),
-                  );                }),
+                  );               }),
               ]),
               Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -98,24 +110,27 @@ class HomeScreen extends StatelessWidget {
                 buildPokemonCard(image: 'ditto', name: 'Ditto', number: "#132", color: AppColors.ditto, onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(
-                      builder: (context) => PokemonDetailScreen(pokemon: pokemonList[6]), // Charmander
+                    PageTransition(
+                      type: PageTransitionType.rightToLeft,
+                      child: PokemonDetailScreen(pokemon: pokemonList[6]),
                     ),
-                  );                }),
+                  );               }),
                 buildPokemonCard(image: 'mew', name: 'Mew', number: "#152", color: AppColors.mew, onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(
-                      builder: (context) => PokemonDetailScreen(pokemon: pokemonList[7]), // Charmander
+                    PageTransition(
+                      type: PageTransitionType.rightToLeft,
+                      child: PokemonDetailScreen(pokemon: pokemonList[7]),
                     ),
                   );                }),
                 buildPokemonCard(image: 'aron', name: 'Aron', number: "#304", color: AppColors.aron, onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(
-                      builder: (context) => PokemonDetailScreen(pokemon: pokemonList[8]), // Charmander
+                    PageTransition(
+                      type: PageTransitionType.rightToLeft,
+                      child: PokemonDetailScreen(pokemon: pokemonList[8]),
                     ),
-                  );                }),
+                  );               }),
               ]),
             ],
           ),

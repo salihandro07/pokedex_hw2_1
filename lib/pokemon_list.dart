@@ -1,21 +1,8 @@
-import 'package:flutter/material.dart';
 import 'package:pokedex_hw2_1/pokemon.dart';
 
 import 'app_colors.dart';
 
 final List<Pokemon> pokemonList = [
-  Pokemon(
-    name: "Charmander",
-    image: 'assets/image/charmander.png',
-    type: "Fire",
-    number: "004",
-    weight: "8.5 kg",
-    height: "0.6 m",
-    abilities: ["Mega-Punch", "Fire-Punch"],
-    description:
-        "A preference for hot things. When it rains, steam is said to spout from its tail.",
-    baseStats: {"HP": 39, "ATK": 52, "DEF": 43, "SPD": 65},
-    color: AppColors.charmander),
   Pokemon(
     name: "Bulbasaur",
     image: "assets/image/bulba.png",
@@ -29,6 +16,18 @@ final List<Pokemon> pokemonList = [
     baseStats: {"HP": 45, "ATK": 49, "DEF": 49, "SPD": 45},
     color: AppColors.bulba,
   ),
+  Pokemon(
+      name: "Charmander",
+      image: 'assets/image/charmander.png',
+      type: "Fire",
+      number: "004",
+      weight: "8.5 kg",
+      height: "0.6 m",
+      abilities: ["Mega-Punch", "Fire-Punch"],
+      description:
+          "A preference for hot things. When it rains, steam is said to spout from its tail.",
+      baseStats: {"HP": 39, "ATK": 52, "DEF": 43, "SPD": 65},
+      color: AppColors.charmander),
   Pokemon(
     name: "Squirtle",
     image: "assets/image/squirtle.png",
